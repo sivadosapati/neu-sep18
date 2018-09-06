@@ -1,0 +1,4 @@
+Source Code (aka Program or .java file) - Written by Developer
+Compiled Code (aka class file) - Compiled by compiler, typically using javac xxx.java
+Runtime Environment - Java runtime environment to run the .class file
+

@@ -1,0 +1,35 @@
+
+______Driving Conditions On The Road____
+
+TrafficSystem : RoadCondition getRoadCondition(Road road)
+Road : Address getAddress(), Vehicle[] getVehicles()
+Traveller : askTrafficSystem(TrafficSystem), travelOnRoad(road, TrafficSystem)
+Vehicle : Boolean isMetWithAccident()
+___________
+RoadCondition getRoadCondition(Road road){
+	Vehicle vehicles[] = road.getVehicles();
+	if( vehicles.count == 0){
+		return RoadCondition.EMPTY;
+	}
+	if( vehicles.count > 10){
+		return RoadCondition.BUSY;
+	}
+	for( int i =0;i<vehicles.length;i++){
+		Vehicle v = vehicles[i];
+		if( v.isMetWithAccident()){
+			return RoadCondition.ACCIDENT;
+		}
+		if( v.isDrivingOverSpeedLimit()){
+			return RoadCondition.NOTIFYI_COP;
+		}
+	}
+	return RoadCondition.ACCESSIBLE;
+}
+
+travelOnRoad(Road r, TrafficSystem ts){
+	RoadCondition rc = ts.getRoadCondition(r);
+	if (rc == RoadCondition.FREE OR rc == RoadCondition.ACCESSIBLE){
+		travel();
+	}
+
+}

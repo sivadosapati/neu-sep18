@@ -1,0 +1,56 @@
+Class, Object, Behaviors, Input, Output, Data
+
+Professor
+	Behaviors -> Subject teach(), Answer answerQuestions(Question), Number countNumberOfStudents()
+Student
+	Behaviors -> listen(), askQuestions()
+Computer
+	Behaviors -> loginProfessor(), loginStudent()
+VirtualClass
+	Behaviors -> simulateClassRoom()	
+	
+
+VirtualClass neuUniverity
+neuUniversity.simulateClassRoom()
+
+--------Program--
+
+Professor siva
+Student divya
+Student lee
+Student arya
+Student charu
+Student sailee
+Computer sivaComputer
+Computer divyaComputer
+Computer leeComputer
+Computer charuComputer
+Computer saileeComputer
+
+
+simulateClassRoom(){
+	sivaComputer.loginProfessor()
+	divyaComputer.loginStudent()
+	leeComputer.loginStudent()
+	saileeComputer.loginStudent()
+	if(siva.countNumberOfStudents() = 3){
+		siva.teach()
+		divya.listen()
+		lee.listen()
+	}
+	else{
+		siva.waitInTheClassRoom()
+	}
+}
+
+simulateClassRoomWithForLoop(){
+
+	sivaComputer.loginProfessor()
+	Student student[]
+	Computer computerForStudent[]
+	index = 0
+	for(int index = 0;index<10;index++){
+		computerForStudent[index].loginStudent()
+	}
+
+}

@@ -1,0 +1,15 @@
+Book
+	Behavior -> Boolean hasSpace()
+
+writeNames(){
+	Book b
+	Student students[];
+	student[0].writeName(b);
+	student[1].writeName(b);
+	for(int i=0;i<10;i++){
+		Boolean space = b.hasSpace();
+		if(space = true){
+			student[i].writeName(b)
+		}
+	}
+}	
