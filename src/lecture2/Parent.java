@@ -35,11 +35,11 @@ public class Parent {
 
 	public static void main(String[] args) {
 		// calculatePrice();
-		// calculatePricUsingConsole();
-		calculatePricUsingConsoleForAParticularGender();
+		calculatePriceUsingConsole();
+		calculatePriceUsingConsoleForAParticularGender();
 	}
 
-	private static void calculatePricUsingConsole() {
+	private static void calculatePriceUsingConsole() {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter number of kids..");
 		Parent p = new Parent();
@@ -68,7 +68,7 @@ public class Parent {
 
 	}
 
-	private static void calculatePricUsingConsoleForAParticularGender() {
+	private static void calculatePriceUsingConsoleForAParticularGender() {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter number of kids..");
 		Parent p = new Parent();
