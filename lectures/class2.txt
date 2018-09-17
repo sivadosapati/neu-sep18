@@ -1,0 +1,44 @@
+Data Types
+	- Basic Data (Primitive data types) or raw data
+		Numbers
+			byte ( 2^7 - 1): byte age, byte marks, byte hourOfDay
+			short ( 2^15 - 1): short populationInCity
+			int : int numberOfStudentsInUniversity, int age
+			long : long age
+			float : float bankBalance
+			double : double gpa, double weight
+			
+		Boolean
+			boolean : boolean raining, boolean isSick, boolean isClassPresent
+		
+		Characters
+			char ^ * $ : char initial, char symbol, char section
+		
+Arrays
+	byte age1, age2, age3, age4
+	byte[] ages;
+	char[] name
+	
+Strings and String Buffers
+	- An abstraction of char[] 
+	String name;
+	
+StringBuffer
+	- It's a String with a group of characters but every character can be modified
+
+Conditional Logic
+	- Expressions that will result in a true or false
+	if( <logic> ){ <logic> a < b or a == b or a > b
+	
+	}
+	
+	if(<Logic>){
+	}
+	else{
+	}
+	
+Loops
+Constructors
+Creation of Objects
+---
+OOPS concepts
