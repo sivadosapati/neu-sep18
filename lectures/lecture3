@@ -1,0 +1,17 @@
+OOPS
+	- Encapsulation
+		- Make every data in an object as private
+		- Define public <Type> getXXX() for accessing the data
+		- Define public void setXXX(<Type> t) for modifying the data
+	- Abstraction
+		- Focus on what and not on how
+		- Invoke behaviors already defined in other objects
+		- Define new behaviors that can be discoverable by other objects
+	- Reuse
+		- Inheritance - Is a - Apple is a Fruit, Dog is an Animal
+		- Composition - Has a - Laptop has a Keyboard, iPhone has a camera, Cup has a Handle
+	- Polymorphism
+		- Static polymorphism - method overloading - same method name, different parameters and same return type
+		- Dynamic polymorphism - Have a base class reference point to a child class object
+			- At run time, the right method is invoked depending on what the reference is pointing to
+	
