@@ -1,0 +1,21 @@
+Unit testing
+Abstract Classes
+Interfaces
+Object
+static
+final
+packages
+Exception Handling
+
+
+//Abstract class is a concept where an Object of this class can't be created
+//Abstract class can have abstract methods
+//If a class has one abstract method - the class needs to be abstract
+//Interface is a definition of a contract. A class can implement one or more interfaces
+//Object is the base class for all classes
+//static variable means every objet of the class will share the state
+//static methods means every object of the class invoke through class
+//final variables mean the state can't be changed after it is initialized
+//final methods can't be overriden in the child classes
+//final classes can't be subclassed
+//Unit Testing is a way to write tests for every logic and ensure that they are always run and are green
