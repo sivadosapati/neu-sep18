@@ -1,0 +1,26 @@
+Packages are a way to compartmentalize classes
+Every class in a package can access other class in the same package without any import statements
+Classes in other package can be accessed through an import xx.yy only if the class is public
+Prefer importing the class as against importing the whole package
+classes defined in the package should have the name of package defined as the first line and the package should be in a directory
+In the situation of a conflict - access the class with a fully qualified package name
+By default, java provides java.lang package for every class (this doesn't need to be imported)
+
+
+Exceptions..
+
+try{} catch{} is a block to handle a piece of code that can potentially throw an exception
+Either all the logic in the try or All the logic in the catch or parts of logic in Try and parts of logic in Catch will get executed
+Every try{} block can be accompanied with multiple catch blocks
+finally{} block is accompanied with a try{} block and the logic in finally block will always get executed irrestive of try or catch
+Not every try{} can have catch blocks and try{} should be accompanied with atleast catch or finally or both
+Every method should have a throws xxxException, if the logic in the method can throw exception at some point of time using throw new xxException();
+A calling method can either handle the exception using try() catch or throw the exception to the invoking method again by throws xxx
+
+Custom Exceptions can be created by subclassing a class named Exception
+Custom exception can also have some state in it.
+
+Custom exceptions can extend from RuntimeException
+RuntimeException or its children doesn't need to be either caught or defined in the method as throws xxxRuntimeException
+
+Errors are not recoverable and it's a good idea to look at the program and fix the code.
