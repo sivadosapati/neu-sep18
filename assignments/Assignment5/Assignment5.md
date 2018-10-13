@@ -4,6 +4,7 @@
 * Max score is 10.
 * Deadline is Fri 10/19, 23: 59.
 * Extra credits are added only if score is less than 10.
+* Write Unit Test for functions
 * Try to attempt every question and keep practising from other online sites. 
 
 
