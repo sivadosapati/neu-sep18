@@ -1,0 +1,14 @@
+Collection framework is an abstraction to group of objects
+Collection is a base interface for working with a group of objects
+Collection has methods like add(), remove(), size(), addAll() etc to access objects
+Any type of Collection can shrink or expand based on the access patterns
+List is the base interface for group of objects that will add every object in the group (all duplicates and no sorting)
+ArrayList is the common type of List - Time complexity (O(1) for accessing an index)
+LinkedList is better for removal and expansion of elements
+Stack is for Last In First Out (LIFO)
+Queue is for First In First Out (FIFO)
+Sets are used for storing collection of objects without duplicate
+HashSet is for unordered list and LinkedHashSet for ordered list
+Every Object put in Set should implement equals() and hashCode()
+TreeSet is for organizing objects in sorted order
+Every Object put in TreeSet should implement compareTo() method
