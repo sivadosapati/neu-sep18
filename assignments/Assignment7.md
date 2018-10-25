@@ -3,7 +3,6 @@
 ## Instructions
 - Max score is 10.
 - Deadline is 23:59 Nov 2nd, Friday.
-- Extra credits are added only if total score is less than 10.
 - **You should write JUnit Test for question 3,4 and 5.**
 
 ## Questions
@@ -105,18 +104,3 @@ Scissors.
         }
     }
     ```
-
-## Extra credit
-
-Write a Java function to remove vowels in a string. (Score 2)
-
-- The function should take a string as input.
-- Should return the input string after omitting the vowels.
-
-Here is the prototype you can work with
-
-```java
-public String removeVowelsFromString(String input){
-    // add your code here
-}
-```
