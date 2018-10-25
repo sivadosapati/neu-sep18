@@ -1,22 +1,28 @@
 package lecture6;
 
+import java.io.File;
 import java.util.Scanner;
 
 public class University {
 
 	public static void main(String[] args) {
 		// StudentsManager manager = new StudentsManagerArrayImplementation();
-		StudentsManager manager = new StudentsManagerWithArrayListImplementation();
+		// StudentsManager manager = new StudentsManagerWithArrayListImplementation();
+		File file = new File("/Users/sdosapati/students.txt");
+		// StudentsManager existingImplementation = new
+		// StudentsManagerWithMapImplementation();
+		StudentsManager existingImplementation = new StudentsManagerArrayImplementation();
+		StudentsManager manager = new StudentsManagerFileImplementation(file, existingImplementation);
 		// ADD, DELETE, UPDATE, DISPLAY, COUNT,
 		Scanner scanner = new Scanner(System.in);
 		while (true) {
-			System.out.println("Enter your choice (ADD|DELETE|UPDATE|DISPLAY|COUNT|EXIT");
+			System.out.println("Enter your choice (ADD|DELETE|UPDATE|DISPLAY|COUNT|EXIT)");
 			String input = scanner.nextLine();
 			if ("EXIT".equalsIgnoreCase(input)) {
 				break;
 			}
 			if ("ADD".equals(input)) {
-				System.out.println("Enter the Student Information (Roll,First,Last");
+				System.out.println("Enter the Student Information (Roll,First,Last)");
 				String s = scanner.nextLine();
 				Student student = makeStudent(s);
 				manager.addStudent(student);

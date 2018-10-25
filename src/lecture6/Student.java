@@ -1,11 +1,13 @@
 package lecture6;
 
-public class Student implements Comparable {
+import java.io.Serializable;
+
+public class Student implements Comparable, Serializable {
 	private int rollNumber;
 	private String first;
 	private String last;
 
-	Student() {
+	public Student() {
 
 	}
 

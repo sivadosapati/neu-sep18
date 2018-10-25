@@ -38,12 +38,17 @@ public class StudentsManagerWithMapImplementation implements StudentsManager {
 
 	@Override
 	public Student[] getAllStudents() {
-		return (Student[])studentsMap.values().toArray();
+		Student[] students = new Student[studentsMap.size()];
+		studentsMap.values().toArray(students);
+		return students;
 	}
 
 	@Override
 	public void displayStudents() {
-		System.out.println(studentsMap.values());
+		// System.out.println(studentsMap.values());
+		for (Student s : studentsMap.values()) {
+			System.out.println(s.toString());
+		}
 
 	}
 
