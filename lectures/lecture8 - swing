@@ -1,0 +1,17 @@
+Creating a UI (User Interface)
+1. Create a container
+2. Create Components
+3. Create a Layout
+4. Set the Layout to Container's content pane
+5. Add Components to Container's content pane
+6. Attach Behaviors to Components
+7. Display the Container
+
+AWT - Abstract Window ToolKit - 1996 (JDK 1.0) - java.awt.*
+Swing - javax.swing.* (JDK 1.2+)
+
+Container 
+	Top Level Container
+	Intermediate Place Holder containers
+	
+https://docs.oracle.com/javase/tutorial/uiswing/
