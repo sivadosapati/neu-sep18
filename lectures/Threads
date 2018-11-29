@@ -1,0 +1,5 @@
+Write a class that extends Thread or implements Runnable
+Write the code for a method named run() in the above class
+Invoke the logic that needs to be executed concurrently in the run() method
+Create an Object of Thread class
+Invoke the start() method on the object created above
