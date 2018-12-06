@@ -4,6 +4,8 @@ public class Person {
 
 	protected String name;
 
+	// private boolean eating = false;
+
 	Person(String name) {
 		this.name = name;
 	}
@@ -16,6 +18,12 @@ public class Person {
 		loop("thinking");
 	}
 
+	public synchronized void eat() {
+		// eating = true;
+		loop("eating");
+		// eating = false;
+	}
+
 	public void loop(String x) {
 		for (int i = 0; i < 10; i++) {
 			System.out.println(new java.sql.Time(System.currentTimeMillis()) + " -> " + name + " is " + x + " " + i);
@@ -24,12 +32,19 @@ public class Person {
 
 	}
 
-	private int random(int x) {
+	public int random(int x) {
 		return (int) (Math.random() * x);
 	}
 
 	public void talk() {
-		loop("talking");
+		System.out.println("I'm about to Talk");
+		pause(125);
+		// if (eating == false)
+		// loop("talking");
+		synchronized (this) {
+			loop("talking");
+		}
+		System.out.println("I finished Talking");
 	}
 
 	public void pause(int ms) {
