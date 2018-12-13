@@ -21,6 +21,7 @@ public class Person {
 	public synchronized void eat() {
 		// eating = true;
 		loop("eating");
+
 		// eating = false;
 	}
 
@@ -97,7 +98,12 @@ public class Person {
 
 		// vini.see();
 		// divya.see();
-		SeeAndTalkThread stt = new SeeAndTalkThread(p);
+		// SeeAndTalkThread stt = new SeeAndTalkThread(p);
+		Thread stt = new Thread(() -> {
+			p.talk();
+			p.see();
+		});
+		
 		// stt.start();
 		long end = System.currentTimeMillis();
 		// System.out.println("Total Time - > " + (end - start));
